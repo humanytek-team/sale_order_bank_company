@@ -22,7 +22,11 @@
 ###############################################################################
 
 {
-    'name': "Bancos para pagos",
+    'name': "Bank account for payments of customers in sale orders",
+    'description': '''Adds field "Bank account of payments" in form view of
+    customers and sale orders. Allows to indicate the bank account of the
+    company to which the customer probably makes the payment.
+    ''',
     'author': "Humanytek",
     'website': "http://www.humanytek.com",
     'category': 'sale',
