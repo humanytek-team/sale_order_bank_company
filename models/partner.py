@@ -27,7 +27,8 @@ from openerp import fields, models
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    partner_bank_company_id = fields.Many2one('res.partner.bank',
-                                    string='Banco a depositar',
-                                    required=False,
-                                    track_visibility='always')
+    partner_bank_company_id = fields.Many2one(
+        'res.partner.bank',
+        string='Bank account of payments',
+        help='Allows to indicate the bank account of the company to which the '
+            'customer probably makes the payments')
