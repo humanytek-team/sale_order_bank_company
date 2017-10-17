@@ -12,8 +12,7 @@
                   expr="//field[@name='company_id']"
                   position="after">
                     <field name="partner_bank_company_id"
-                        domain="[('partner_id', '=', company_id)]"
-                        attrs="{'invisible': [('state', 'in', ('draft','sent'))]}"/>
+                        domain="[('partner_id', '=', company_id)]"/>
                 </xpath>
 
             </field>
